@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/de92ddd3ea.js" crossorigin="anonymous"></script>
+   
 </head>
-
+<script src="./index.js"></script>
 <body>
     <div class="main_conatiner">
             <div class="img-div">
@@ -39,19 +40,10 @@
                         </select>
                         <input placeholder="Enter your mobile" id="number" type="number">
                     </div>
-                    <div class="btn"><button id="btn">TALK TO US <span> <i class="fa-sharp fa-solid fa-right-long"></i></span></button></div>
+                    <div class="btn"><button id="btn" onclick="myFunc()">TALK TO US <span> <i class="fa-sharp fa-solid fa-right-long"></i></span></button></div>
                 </div>
               
             </div>
     </div>
 </body>
 </html>
-<script>
-    document.querySelector("#btn").addEventListener("click" , myFun)
-    function myFun(){
-       email=document.querySelector("#email").value
-       code=document.querySelector("#code").value
-       number=document.querySelector("#number").value
-       console.log(number.length)
-    }
-</script>
