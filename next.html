@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks</title>
+</head>
+<style>
+    .div{
+        margin:auto;
+        width: 80%;
+        margin-top: 20%;
+        border:1px solid red;
+    }
+    .div>p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="div">
+        <p>
+            Thanks a ton for taking out your precious time and for completing the survey
+             <br>
+             <br>
+          Email Address : <span id="mail"></span>
+          <br>
+          <br>
+          Contact Number : <span id="num"></span> 
+        </p>
+    </div>
+</body>
+</html>
+
+<script>
+    var data=JSON.parse(localStorage.getItem("web_engage"))
+
+    document.querySelector("#mail").innerHTML=data.email
+    document.querySelector("#num").innerHTML=data.number
+    
+</script>

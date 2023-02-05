@@ -26,7 +26,8 @@ function myFunc() {
         number:number
        }
        localStorage.setItem("web_engage",JSON.stringify(obj))
-       alert("done")
+       alert("Welcome to webengage.")
+       window.location.href="next.html"
     }
 
   }
